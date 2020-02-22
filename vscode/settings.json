@@ -1,0 +1,212 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "editor.fontFamily": "'Fira Code Retina','Microsoft YaHei',Consolas, 'Courier New', monospace,'DejaVu Sans Mono Bold for Powerline'",
+    "editor.fontSize": 20,
+    "editor.suggestSelection": "first",
+    "editor.fontLigatures": true, //这个控制是否启用字体连字，true启用，false不启用，这里选择启用
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "leetcode.endpoint": "leetcode-cn",
+    "markdown.preview.fontSize": 18,
+    "leetcode.workspaceFolder": "e:\\Code\\PlayWithLeetCode",
+    "leetcode.defaultLanguage": "java",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.fontSize": 18,
+    "python.pythonPath": "D:\\Language\\python\\python.exe",
+    "python.jediEnabled": false,
+    "files.autoSave": "onFocusChange",
+    "workbench.iconTheme": "material-icon-theme",
+    "remote.downloadExtensionsLocally": true,
+    "code-runner.runInTerminal": true,
+    //"code-runner.runInTerminal": true
+    "code-runner.executorMap": {
+        "c": " cd $dir && gcc $fileName -D LOCAL -o E:/Cpp/exe/$fileNameWithoutExt.exe && E:/Cpp/exe/$fileNameWithoutExt.exe",
+        "cpp": " cd $dir && g++ $fileName -D LOCAL -o E:/Cpp/exe/$fileNameWithoutExt.exe && E:/Cpp/exe/$fileNameWithoutExt.exe",
+    },
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "terminal.integrated.shellArgs.windows": [
+        "-NoLogo"
+        ],
+        "vim.leader": "<space>",
+        "vim.easymotion": true,
+        "vim.sneak": true,
+        "vim.incsearch": true,
+        "vim.useSystemClipboard": true,
+        "vim.useCtrlKeys": true,
+        "vim.hlsearch": true,
+        "vim.insertModeKeyBindings": [
+            {
+                "before": [
+                    "<C-h>"
+                ],
+                "after": [
+                    "<left>"
+                ]
+            },
+            {
+                "before": [
+                    "<C-j>"
+                ],
+                "after": [
+                    "<down>"
+                ]
+            },
+            {
+                "before": [
+                    "<C-k>"
+                ],
+                "after": [
+                    "<up>"
+                ]
+            },
+            {
+                "before": [
+                    "<C-l>"
+                ],
+                "after": [
+                    "<right>"
+                ]
+            },
+            {
+                "before": [
+                    "j",
+                    "j"
+                ],
+                "after": [
+                    "<Esc>"
+                ]
+            }
+        ],
+        "vim.normalModeKeyBindings": [
+            // 保存并退出当前文件Q
+            {
+                "before": [
+                    "Q"
+                ],
+                "commands": [
+                    ":wq"
+                ]
+            },
+            // 复制全文 ,v
+            {
+                "before": [
+                    "<leader>",
+                    "y"
+                ],
+                "after": [
+                    "g",
+                    "g",
+                    "V",
+                    "G",
+                    "y"
+                ]
+            },
+            {
+                "before": [
+                    "<C-n>"
+                ],
+                "commands": [
+                    ":nohl"
+                ]
+            }
+        ],
+        "vim.normalModeKeyBindingsNonRecursive": [
+            // easymotion 快速跳转 ,s + <char>
+            {
+                "before": [
+                    "<leader>",
+                    "s"
+                ],
+                "after": [
+                    "<leader>",
+                    "<leader>",
+                    "s"
+                ]
+            },
+            // 打开命令面板 :
+            {
+                "before": [
+                    ":"
+                ],
+                "commands": [
+                    "workbenjh.jaction.showCommands",
+                ]
+            },
+            // 保存当前文件
+            {
+                "before": [
+                    "leader",
+                    "w"
+                ],
+                "commands": [
+                    "workbench.action.files.save",
+                ]
+            },
+            // 移到行首H,j 移到行尾L
+            {
+                "before": [
+                    "H"
+                ],
+                "after": [
+                    "^"
+                ]
+            },
+            {
+                "before": [
+                    "L"
+                ],
+                "after": [
+                    "$"
+                ]
+            },
+            // 删到行首，删到行尾  暂时只能用leader + H/L
+            {
+                "before": [
+                    "leader",
+                    "H"
+                ],
+                "after": [
+                    "d",
+                    "^"
+                ]
+            },
+            {
+                "before": [
+                    "leader",
+                    "L"
+                ],
+                "after": [
+                    "d",
+                    "$"
+                ]
+            },
+        ],
+        "vim.visualModeKeyBindingsNonRecursive": [
+            // 调整缩进
+            {
+                "before": [
+                    ">"
+                ],
+                "commands": [
+                    "editor.action.indentLines"
+                ]
+            },
+            {
+                "before": [
+                    "<"
+                ],
+                "commands": [
+                    "editor.action.outdentLines"
+                ]
+            },
+        ],
+        "vim.handleKeys": {
+            "<C-a>": false,
+            "<C-f>": false
+        }
+}
