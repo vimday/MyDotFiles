@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "One Monokai",
     "editor.fontFamily": "'Fira Code Retina','Microsoft YaHei',Consolas, 'Courier New', monospace,'DejaVu Sans Mono Bold for Powerline'",
     "editor.fontSize": 20,
     "editor.suggestSelection": "first",
@@ -31,182 +31,183 @@
     },
     "terminal.integrated.shellArgs.windows": [
         "-NoLogo"
-        ],
-        "vim.leader": "<space>",
-        "vim.easymotion": true,
-        "vim.sneak": true,
-        "vim.incsearch": true,
-        "vim.useSystemClipboard": true,
-        "vim.useCtrlKeys": true,
-        "vim.hlsearch": true,
-        "vim.insertModeKeyBindings": [
-            {
-                "before": [
-                    "<C-h>"
-                ],
-                "after": [
-                    "<left>"
-                ]
-            },
-            {
-                "before": [
-                    "<C-j>"
-                ],
-                "after": [
-                    "<down>"
-                ]
-            },
-            {
-                "before": [
-                    "<C-k>"
-                ],
-                "after": [
-                    "<up>"
-                ]
-            },
-            {
-                "before": [
-                    "<C-l>"
-                ],
-                "after": [
-                    "<right>"
-                ]
-            },
-            {
-                "before": [
-                    "j",
-                    "j"
-                ],
-                "after": [
-                    "<Esc>"
-                ]
-            }
-        ],
-        "vim.normalModeKeyBindings": [
-            // 保存并退出当前文件Q
-            {
-                "before": [
-                    "Q"
-                ],
-                "commands": [
-                    ":wq"
-                ]
-            },
-            // 复制全文 ,v
-            {
-                "before": [
-                    "<leader>",
-                    "y"
-                ],
-                "after": [
-                    "g",
-                    "g",
-                    "V",
-                    "G",
-                    "y"
-                ]
-            },
-            {
-                "before": [
-                    "<C-n>"
-                ],
-                "commands": [
-                    ":nohl"
-                ]
-            }
-        ],
-        "vim.normalModeKeyBindingsNonRecursive": [
-            // easymotion 快速跳转 ,s + <char>
-            {
-                "before": [
-                    "<leader>",
-                    "s"
-                ],
-                "after": [
-                    "<leader>",
-                    "<leader>",
-                    "s"
-                ]
-            },
-            // 打开命令面板 :
-            {
-                "before": [
-                    ":"
-                ],
-                "commands": [
-                    "workbenjh.jaction.showCommands",
-                ]
-            },
-            // 保存当前文件
-            {
-                "before": [
-                    "leader",
-                    "w"
-                ],
-                "commands": [
-                    "workbench.action.files.save",
-                ]
-            },
-            // 移到行首H,j 移到行尾L
-            {
-                "before": [
-                    "H"
-                ],
-                "after": [
-                    "^"
-                ]
-            },
-            {
-                "before": [
-                    "L"
-                ],
-                "after": [
-                    "$"
-                ]
-            },
-            // 删到行首，删到行尾  暂时只能用leader + H/L
-            {
-                "before": [
-                    "leader",
-                    "H"
-                ],
-                "after": [
-                    "d",
-                    "^"
-                ]
-            },
-            {
-                "before": [
-                    "leader",
-                    "L"
-                ],
-                "after": [
-                    "d",
-                    "$"
-                ]
-            },
-        ],
-        "vim.visualModeKeyBindingsNonRecursive": [
-            // 调整缩进
-            {
-                "before": [
-                    ">"
-                ],
-                "commands": [
-                    "editor.action.indentLines"
-                ]
-            },
-            {
-                "before": [
-                    "<"
-                ],
-                "commands": [
-                    "editor.action.outdentLines"
-                ]
-            },
-        ],
-        "vim.handleKeys": {
-            "<C-a>": false,
-            "<C-f>": false
+    ],
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "after": [
+                "<left>"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "<down>"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "<up>"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "<right>"
+            ]
+        },
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
+    ],
+    "vim.normalModeKeyBindings": [
+        // 保存并退出当前文件Q
+        {
+            "before": [
+                "Q"
+            ],
+            "commands": [
+                ":wq"
+            ]
+        },
+        // 复制全文 ,v
+        {
+            "before": [
+                "<leader>",
+                "y"
+            ],
+            "after": [
+                "g",
+                "g",
+                "V",
+                "G",
+                "y"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // easymotion 快速跳转 ,s + <char>
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "s"
+            ]
+        },
+        // 打开命令面板 :
+        {
+            "before": [
+                ";"
+            ],
+            "commands": [
+                "workbench.action.showCommands",
+            ]
+        },
+        // 保存当前文件
+        {
+            "before": [
+                "leader",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save",
+            ]
+        },
+        // 移到行首H,j 移到行尾L
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        // 删到行首，删到行尾  暂时只能用leader + H/L
+        {
+            "before": [
+                "leader",
+                "H"
+            ],
+            "after": [
+                "d",
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "L"
+            ],
+            "after": [
+                "d",
+                "$"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // 调整缩进
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "latex-workshop.view.pdf.viewer": "tab"
 }
