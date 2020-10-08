@@ -1,0 +1,319 @@
+{
+    "workbench.colorTheme": "One Monokai",
+    "editor.fontFamily": "'Fira Code','Microsoft YaHei',Consolas, 'Courier New', monospace,'DejaVu Sans Mono Bold for Powerline'",
+    "editor.fontSize": 20,
+    "editor.suggestSelection": "first",
+    "editor.fontLigatures": true, //这个控制是否启用字体连字，true启用，false不启用，这里选择启用
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "leetcode.endpoint": "leetcode-cn",
+    "markdown.preview.fontSize": 18,
+    //"leetcode.workspaceFolder": "e:\\Code\\PlayWithLeetCode",
+    "leetcode.defaultLanguage": "java",
+    "leetcode.hint.configWebviewMarkdown": false,
+    //"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.fontSize": 18,
+    //"python.pythonPath": "D:\\Language\\python\\python.exe",
+    "python.jediEnabled": false,
+    "files.autoSave": "onFocusChange",
+    "workbench.iconTheme": "material-icon-theme",
+    "remote.downloadExtensionsLocally": true,
+    "code-runner.runInTerminal": true,
+    //"code-runner.runInTerminal": true
+    "code-runner.executorMap": {
+        "c": " cd $dir && gcc $fileName -D LOCAL -o E:/Cpp/exe/$fileNameWithoutExt.exe && E:/Cpp/exe/$fileNameWithoutExt.exe",
+        "cpp": " cd $dir && g++ $fileName -D LOCAL -o E:/Cpp/exe/$fileNameWithoutExt.exe && E:/Cpp/exe/$fileNameWithoutExt.exe",
+        "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt"
+    },
+    "background.enabled": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "terminal.integrated.shellArgs.windows": [
+        "-NoLogo"
+    ],
+    "go.testFlags": [
+        "-v"
+    ],
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "after": [
+                "<left>"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "<down>"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "<up>"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "<right>"
+            ]
+        },
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        // 保存并退出当前文件Q
+        {
+            "before": [
+                "Q"
+            ],
+            "commands": [
+                ":wq"
+            ]
+        },
+        // 复制全文 ,v
+        {
+            "before": [
+                "<leader>",
+                "y"
+            ],
+            "after": [
+                "g",
+                "g",
+                "V",
+                "G",
+                "y"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // easymotion 快速跳转 ,s + <char>
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "s"
+            ]
+        },
+        // 打开命令面板 :
+        {
+            "before": [
+                ";"
+            ],
+            "commands": [
+                "workbench.action.showCommands",
+            ]
+        },
+        // 保存当前文件
+        {
+            "before": [
+                "leader",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save",
+            ]
+        },
+        // 移到行首H,j 移到行尾L
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        // 删到行首，删到行尾  暂时只能用leader + H/L
+        {
+            "before": [
+                "leader",
+                "H"
+            ],
+            "after": [
+                "d",
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "L"
+            ],
+            "after": [
+                "d",
+                "$"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // 调整缩进
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "editor.formatOnSave": true,
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4,AllowShortIfStatementsOnASingleLine: true, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4 } ",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "XeLaTeX",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "PDFLaTeX",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "BibTeX",
+            "tools": [
+                "bibtex"
+            ]
+        },
+        {
+            "name": "xelatex -> bibtex -> xelatex*2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.external.synctex.command": "/Applications/Skim.app/Contents/SharedSupport/displayline",
+    "latex-workshop.view.pdf.external.synctex.args": [
+        "-r",
+        "%LINE%",
+        "%PDF%",
+        "%TEX%"
+    ],
+    "latex-workshop.view.pdf.external.viewer.command": "displayfile",
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "-r",
+        "%PDF%"
+    ],
+    "editor.wordWrap": "on",
+    "[latex]": {}
+}
